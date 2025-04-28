@@ -30,3 +30,7 @@ def index():
         result = round(final_price, 2)
 
     return render_template('index.html', result=result, estimate_price=session.get('estimate_price'), a_value=session.get('a_value'))
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
