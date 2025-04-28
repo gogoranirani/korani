@@ -1,3 +1,13 @@
+from flask import Flask, render_template, request, session
+import random
+import os
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
