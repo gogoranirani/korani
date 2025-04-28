@@ -22,4 +22,4 @@ def index():
             session['a_value'] = a_value
 
         plus_randoms = [estimate_price * random.uniform(0, 2) for _ in range(8)]
-        minus_randoms = [estimate_price * random.uniform(-2*
+        minus_randoms = [estimate_price * random.uniform(-2, 0) for _ in range(7)]
