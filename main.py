@@ -7,9 +7,6 @@ app.secret_key = 'your_secret_key'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    
-@app.route('/', methods=['GET', 'POST'])
-def index():
     result = None
     estimate_price = None
     a_value = None
